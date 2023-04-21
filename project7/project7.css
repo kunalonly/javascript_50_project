@@ -1,0 +1,136 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body{
+
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+overflow: hidden;
+margin: 0;
+}
+
+h1{
+    font-size: 3rem;
+    color: #fff;
+    position:absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    white-space: nowrap;    
+
+}
+.btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    font-size: 1rem;
+    border: #fff solid 0.2rem;
+    color: #fff;
+    padding: 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 15rem;
+
+}
+
+.split.left ,
+.split.right,
+.split.left::before,
+.split.right::before
+
+{
+    transition: all 1000ms ease-in-out;
+}
+.split.left .btn:hover{
+    background-color: rgba(87,84,237,1);
+    border-color: rgba(87,84,237,1);
+}
+
+.split.right .btn:hover{
+    background-color: rgba(43,43,43,1);
+    border-color: rgba(43,43,43,1);
+}
+
+.hover-left .left{
+width: 75%;
+}
+.hover-left .right
+{
+    width: 25%;
+}
+.hover-right .right
+{
+width: 75%;
+}
+.hover-right .left
+{
+width: 25%;
+}
+
+
+
+
+
+
+.container
+{
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.split
+{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.split.left
+{
+left: 0;
+background: url('./img/garvit-3IyjBegTXLA-unsplash.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.split.right
+{
+    right: 0;
+    background: url('./img/nicholas-doherty-dXh2UFuU_f4-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.split.left::before
+{
+    content: '';
+    background-color: rgba(87,84,237,0.7);
+    position:absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.split.right::before
+{
+content: '';
+background-color: rgba(43,43,43,0.7);
+position: absolute;
+width: 100%;
+height: 100%;
+
+}
