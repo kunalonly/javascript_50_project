@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightpink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.card
+{
+    box-shadow: 0 5px 6px rgba(0,0,0,0.4);
+    overflow: hidden;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.card-header
+{
+    height: 200px;
+}
+.card-header img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.card-content
+{
+    background-color: white;
+    padding: 30px;
+}
+.card-title
+{
+    height: 20px;
+}
+.card-expcert{
+    color:grey;
+    margin: 10px 0 20px;
+}
+.auther
+{
+    display: flex;
+}
+.profile-img
+{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+.auther-info
+{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+margin-left: 10px;
+width: 200px;
+}
+
+.auther-info small{
+    color: lightgray;
+}

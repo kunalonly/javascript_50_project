@@ -1,0 +1,43 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+height:  100vh;
+background-color: slategray;
+}
+
+.empty
+{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border: 3px solid black;
+    margin: 10px;
+}
+.fill
+{
+   background-image: url('../project16/img/garvit-3IyjBegTXLA-unsplash.jpg') ;
+   background-position: center;
+   background-size: cover;
+    height: 145px;
+    width: 145px;
+    cursor: pointer;
+}
+
+.hold
+{
+    border: 5px solid grey;
+}
+
+.hovred
+{
+    background-color: goldenrod;
+    border: 5px dotted dodgerblue;
+}
