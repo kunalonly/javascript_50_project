@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container
+{
+   width: 1000px;
+   height: 500px;
+    border: 1px solid grey;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+    margin: 10px auto;
+
+   
+}
+.box-container 
+{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.box-container .box{
+   
+   width: 90%;
+   height: 30%;
+    border: 1px solid grey;
+    margin:auto;
+   
+}
+.big-box 
+{
+    width: 45%;
+    height: 95%;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    margin: auto
+}
